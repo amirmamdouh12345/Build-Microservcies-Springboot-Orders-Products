@@ -31,26 +31,6 @@ public class OrderService {
     @Autowired
     private WebClient.Builder webClientBuilder;
 
-//    public List<Order> getAllOrders(){
-//        return orderRepo.findAll();
-//    }
-
-//    public Order getOrderById(Long id) throws NameNotFoundException {
-//        Optional<Order> order=orderRepo.findById(id);
-//        if(order.isPresent()){
-//            return order.get();
-//        }
-//        throw new NameNotFoundException("Id is not Matched..");
-//    }
-
-//    public Order getOrderByName(String  name) throws NameNotFoundException {
-//        Optional<Order> order=orderRepo.findByName(name);
-//        if(order.isPresent()){
-//            return order.get();
-//        }
-//        throw new NameNotFoundException("Order Name is not Matched..");
-//    }
-
     public String insertOrder(Order  order) throws NameNotFoundException {
 
         List<InventoryResponseToOrder> response ;
@@ -89,26 +69,6 @@ public class OrderService {
 
 
     }
-
-//    public Order updateOrder(Long id,Order  order) throws NameNotFoundException {
-//        Optional<Order> alreadyFound = orderRepo.findById(id);
-//        if(alreadyFound.isPresent()){
-//            order.setId(id);
-//            return orderRepo.save(order);
-//        }
-//        throw new NameNotFoundException("Order Id is not Matched for the Update..");
-//    }
-
-//    public String deleteByName(String name) throws NameNotFoundException {
-//        Optional<Order> alreadyFound = orderRepo.findByName(name);
-//        if(alreadyFound.isPresent()){
-//            orderRepo.delete(alreadyFound.get());
-//            return "Deleted Successfully";
-//        }
-//        throw new NameNotFoundException("Order Id is not Matched for the Update..");
-//    }
-
-
 
 
 }
