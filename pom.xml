@@ -21,7 +21,8 @@
 	<modules>
 		<module>UserService</module>
 		<module>OrderService</module>
-		<module>ProductService</module>
+		<module>InventoryService</module>
+
 	</modules>
 
 
