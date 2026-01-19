@@ -8,6 +8,7 @@ The system uses **Eureka Service Discovery** to allow services to register and c
 ---
 
 ## 🧱 System Architecture
+```text
 
                  ┌────────────────────┐
                  │    Eureka Server   │  ← Service Registry / Discovery
@@ -19,7 +20,7 @@ OrderService    InventoryService  UserService   (Shared Modules)
    │                 │               │                 │
    └─── REST APIs ─────────────────────────────────────┘
 
-
+```
 ---
 
 ## 📦 Project Modules
